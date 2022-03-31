@@ -3,14 +3,27 @@ Inserisci un numero, se è pari stampa il numero,
 se è dispari stampa il numero successivo.
  */
 
-const userNumber = parseInt(prompt("inserisci un numero"));
+let i = 0;
 
-switch (userNumber % 2) {
-  case 0:
-    console.log(userNumber);
-    break;
+while (i < 1) {
+  const userNumber = parseInt(prompt("inserisci un numero"));
 
-  default:
-    console.log(userNumber + 1);
-    break;
+  switch (true) {
+    case isNaN(userNumber):
+      alert("Non hai inserito un valore numerico");
+      break;
+
+    default:
+      switch (0) {
+        case userNumber % 2:
+          console.log(userNumber);
+          break;
+
+        default:
+          console.log(userNumber + 1);
+          break;
+      }
+      break;
+  }
+  i++;
 }
