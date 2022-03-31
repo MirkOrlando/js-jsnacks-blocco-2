@@ -5,21 +5,25 @@ Esegui questo programma in due versioni, con il for e con il while.
  */
 
 /* programma con ciclo for */
-/* const numbersList = [];
+const numbersList = [];
 let sum = 0;
 
 for (let i = 0; i < 5; i++) {
   userNumber = prompt("inserisci un numero");
-  numbersList.push(userNumber);
-  numb = parseInt(numbersList[i]);
-  sum += numb;
+  if (!isNaN(userNumber)) {
+    numbersList.push(userNumber);
+    numb = parseInt(numbersList[i]);
+    sum += numb;
+  } else {
+    i--;
+  }
   console.log(numbersList[i]);
 }
 
-console.log(sum); */
+console.log(sum);
 
 /* programma con ciclo while */
-let sum = 0;
+/* let sum = 0;
 let i = 0;
 
 while (i < 5) {
@@ -33,3 +37,4 @@ while (i < 5) {
 }
 
 console.log(sum);
+ */
