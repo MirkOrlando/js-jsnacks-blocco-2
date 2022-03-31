@@ -5,15 +5,12 @@ Esegui questo programma in due versioni, con il for e con il while.
  */
 
 /* programma con ciclo for */
-const numbersList = [];
 let sum = 0;
 
 for (let i = 0; i < 5; i++) {
   userNumber = prompt("inserisci un numero");
   if (!isNaN(userNumber)) {
-    numbersList.push(userNumber);
-    numb = parseInt(numbersList[i]);
-    sum += numb;
+    sum += userNumber;
   } else {
     i--;
   }
