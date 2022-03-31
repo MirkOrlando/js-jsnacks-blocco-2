@@ -22,9 +22,20 @@ const surnamesList = [
 ];
 const guestsList = [];
 
-for (let i = 0; i < namesList.length; i++) {
+/* for (let i = 0; i < namesList.length; i++) {
   const guest = `${namesList[i]} ${surnamesList[i]}`;
   guestsList.push(guest);
+}
+
+console.log(guestsList);
+ */
+
+let i = 0;
+while (i < namesList.length) {
+  const guest = `${namesList[i]} ${surnamesList[i]}`;
+  guestsList.push(guest);
+
+  i++;
 }
 
 console.log(guestsList);
