@@ -24,9 +24,12 @@ let i = 0;
 
 while (i < 5) {
   userNumber = parseInt(prompt("inserisci un numero"));
-  sum += userNumber;
+  console.log(userNumber);
+  if (!isNaN(userNumber)) {
+    sum += userNumber;
 
-  i++;
+    i++;
+  }
 }
 
 console.log(sum);
