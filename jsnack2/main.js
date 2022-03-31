@@ -23,7 +23,7 @@ while (i < 1) {
           console.log(userNumber + 1);
           break;
       }
+      i++;
       break;
   }
-  i++;
 }

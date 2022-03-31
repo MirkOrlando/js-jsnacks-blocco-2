@@ -24,3 +24,18 @@ while (i < numbersList.length) {
 }
 
 console.log(sum);
+
+/* for (let i = 0; i < numbersList.length; i++) {
+  numb = numbersList[i];
+  console.log(`${i}: ${numb}`);
+  switch (1) {
+    case i % 2:
+      sum += numb;
+      break;
+
+    default:
+      break;
+  }
+}
+
+console.log(sum); */
