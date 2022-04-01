@@ -20,7 +20,7 @@ while (i < 1) {
           break;
 
         default:
-          console.log(userNumber + 1);
+          console.log(++userNumber);
           break;
       }
       i++;
