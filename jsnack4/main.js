@@ -11,13 +11,8 @@ let i = 0;
 while (i < numbersList.length) {
   numb = numbersList[i];
   //console.log(`${i}: ${numb}`);
-  switch (i % 2) {
-    case 1:
-      sum += numb;
-      break;
-
-    default:
-      break;
+  if (i % 2 !== 0) {
+    sum += numb;
   }
 
   i++;
